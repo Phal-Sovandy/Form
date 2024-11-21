@@ -25,7 +25,7 @@ form{
     background-color: #f8faff;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 .form-part{
     width: 100%;
@@ -43,12 +43,17 @@ form{
     flex: 1;
 }
 
+input,
+select{
+    background-color: white;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="password"],
 select,
-input[type="textarea"]{
+textarea{
     width: 100%;
     height: 30px;
     border-radius: 10px;
@@ -60,10 +65,43 @@ input[type="textarea"]{
 #button{
     background-color: #d9d9d9;
     text-align: center;
-    padding-block: 20px;
 }
 #top{
     font-size: 1.7rem;
     font-weight: 700;
     color: #585858;
+    padding-block: 20px;
+}
+#income > div{
+    display: flex;
+    gap: 20px;
+}
+#income > div div{
+    background-color: #00d099;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+#button{
+    padding-block: 10px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+button{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00d099;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:hover{
+    background-color: #00eaab;
+    color: black;
 }
