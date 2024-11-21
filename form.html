@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="top">Create Account</div>
+        <form>
+            <div id="form-1" class="form-part">
+                <div>
+                    <h3>First Name*</h3>
+                    <input type="text" placeholder="enter your first name">
+                </div>
+                <div>
+                    <h3>last Name*</h3>
+                    <input type="text" placeholder="enter your last name">
+                </div>
+            </div>
+
+            <div  id="form-2" class="form-part">
+                <h3>Email*</h3>
+                <input type="email">
+            </div>
+
+            <div  id="form-3" class="form-part">
+                <div>
+                    <h3>Password*</h3>
+                    <input type="password" placeholder="enter your password">
+                </div>
+                <div>
+                    <h3>Confirm Password*</h3>
+                    <input type="password" placeholder="enter your password again">
+                </div>
+                
+            </div>
+
+            <div id="form-4and5" class="form-part">
+                <div id="form-4">
+                    <div id="gender">
+                        <h3>Gender:</h3>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                        
+                    </div>
+                    <div>
+                        <h3>Source of Income</h3>
+                        <select>
+                            <option>Employed</option>
+                            <option>Unemployed</option>
+                            <option>Freelancer</option>
+                        </select>
+                    </div>
+                    <div id="upload-file">
+                        <h3>Upload Profile Picture</h3>
+                        <input type="file">
+                    </div>
+                </div>
+
+                <div id="form-5">
+                    <div id="checkbox">
+                        <h3>Hobbies</h3>
+                        <div>
+                            <input type="checkbox" id="music">
+                            <label for="music">Music</label>
+                            <input type="checkbox" id="sport">
+                            <label for="sport">Sport</label>
+                            <input type="checkbox" id="travel">
+                            <label for="travel">Travel</label>
+                            <input type="checkbox" id="movies">
+                            <label for="movies">Movies</label>
+                        </div>
+                    </div>
+                    <div id="income">
+                        <h3>Income</h3>
+                        <input type="range">
+                    </div>
+                    <div id="age">
+                        <h3>Age</h3>
+                        <input type="number" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="bio">
+                <h3>Bio</h3>
+                <input type="textarea">
+            </div>
+        </form>
+        <div id="button">
+            <button>Create</button>
+        </div>
+    </div>
+</body>
+</html>
