@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: "Roboto Condensed";
+}
+main{
+    background-color: rgb(110, 183, 212);
+    border-radius: 30px;
+    padding: 5%;
+    margin-top: 100px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10%;
+}
+@media (max-width: 650px) {
+    main{
+        flex-direction: column;
+    }
+    main > div{
+        width: 100%;
+    }
+}
+
+#left-part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#left-part h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+#left-part p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+#right-part{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#right-part h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+#right-part input{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-inline: 10px;
+}
+#right-part input::placeholder{
+    color: rgb(133, 133, 133);
+    font-size: 1rem;
+}
+
+#right-part select{
+    border-radius: 20px;
+    border: none;
+    padding-inline: 10px;
+    height: 40px;
+}
+
+#right-part button{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-inline: 10px;
+    padding-inline: 30px;
+}
+
+form{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "name name gender"
+    "country country region"
+    "email email email"
+    "tel tel submit"
+    "com com com";
+
+    gap: 20px;
+}
+
+#name{
+    grid-area: name;
+}
+#gender{
+    grid-area: gender;
+}
+#country{
+    grid-area: country;
+}
+#region{
+    grid-area: region;
+}
+#email{
+    grid-area: email;
+}
+#tel{
+    grid-area: tel;
+}
+select,
+button{
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#submit{
+    grid-area: submit;
+    background-color: rgb(251, 222, 59);
+    color: rgb(48, 48, 48);
+    font-weight: 700;
+}
+#submit:hover{
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+#com{
+    grid-area: com;
+}
